@@ -55,7 +55,7 @@ Now open a terminal on the working dir and run:
 - `py main.py`
 
 where `main.py` looks like this:
-```pthon
+```python
 from phantomflix import NetflixClient
 import asyncio
 
