@@ -26,10 +26,17 @@
 - ![MKVToolNix](https://mkvtoolnix.download/)
 
 ## How to use
-Extract the cookies from Netflix (use an extension like this ![cookie.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/)) and place the cookie file in your working directory.
+1. Extract Cookies from Netflix:
+    - Use an extension like ![cookie.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) to extract cookies from Netflix.
+    - Save the extracted cookie file in your working directory.
 
-Then you will need a **private L3 CDM**. You can extract one for yourself from an Andoid device using this tool: ![https://github.com/Diazole/dumper](https://github.com/Diazole/dumper), or you can buy one for cheap from me. If you need to contact me you can find me on telegram: [@edobal](https://t.me/edobal). Then place `device_name` with the L3 cdm inside the `devices` folder.
+2. Obtain a Private L3 CDM (Content Decryption Module):
+    - Option 1: Extract it yourself from an Android device using the ![dumper](https://github.com/Diazole/dumper) tool.
+    - Option 2: Purchase a private L3 CDM. For this, you can contact me on Telegram: [@edobal](https://t.me/edobal).
 
+3. Setup the L3 CDM:
+   - Place the L3 CDM file, named as device_name, inside the devices folder in your working environment.
+  
 Working folder example:
 ```bash
 │   cookies.txt
@@ -47,5 +54,24 @@ Now open a terminal on the working dir and run:
 
 where `main.py` looks like this:
 ```pthon
+from phantomflix import NetflixClient
+import asyncio
 
+client = NetflixClient(
+    email="", # Insert your email here
+    password="", # Insert your password here
+    device="<device_name>", # Insert your CDM folder name here
+    quality=1080,
+    audio_language=["Italian"],
+    language="it-IT", # Metadata language
+    video_profile="high",
+    quiet=False,
+)
+
+async def main():
+    # movie
+    viewables = client.get_viewables(81500601) # for serie add season=<season_number>, episode=<episode_number>
+    for viewable in viewables: print(viewable.title)
+    await viewables[0].download()
+asyncio.run(main())
 ```
