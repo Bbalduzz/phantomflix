@@ -27,7 +27,7 @@
 
 ## How to use
 1. Extract Cookies from Netflix:
-    - Use an extension like ![cookie.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) to extract cookies from Netflix.
+    - Use an extension like [cookie.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) to extract cookies from Netflix.
     - Save the extracted cookie file in your working directory.
 
 2. Obtain a Private L3 CDM (Content Decryption Module):
