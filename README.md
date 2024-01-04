@@ -39,9 +39,11 @@
   
 Working folder example:
 ```bash
-│   cookies.txt
-│   main.py
 │   phantomflix/
+│   cookies.txt
+│   languages.txt
+│   setup.py
+│   main.py
 └───devices/
     └───<device name>/
             device_client_id_blob
