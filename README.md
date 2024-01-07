@@ -77,3 +77,12 @@ async def main():
     await viewables[0].download()
 asyncio.run(main())
 ```
+
+# Support
+We also accept donations, so we can keep this project up!
+
+[![liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/balduzz/donate)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C8T2OJ6)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=3C8G7V8DUWLQG)
