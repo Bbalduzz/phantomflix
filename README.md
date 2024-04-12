@@ -20,10 +20,10 @@
 
 ## Dependencies
 > make sure to add these in the PATH on in your working directory
-- ![ffmpeg](https://ffmpeg.org/)
-- ![aria2](https://github.com/aria2/aria2)
-- ![shakra packager](https://github.com/shaka-project/shaka-packager)
-- ![MKVToolNix](https://mkvtoolnix.download/)
+- [ffmpeg](https://ffmpeg.org/)
+- [aria2](https://github.com/aria2/aria2)
+- [shakra packager](https://github.com/shaka-project/shaka-packager)
+- [MKVToolNix](https://mkvtoolnix.download/)
 
 ## How to use
 1. Extract Cookies from Netflix:
