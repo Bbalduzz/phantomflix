@@ -32,7 +32,7 @@
 
 2. Obtain a Private L3 CDM (Content Decryption Module):
     - Option 1: Extract it yourself from an Android device using the ![dumper](https://github.com/Diazole/dumper) tool.
-    - Option 2: Extract it yourself from an Android emulator. [how to](https://pastebin.com/vc6zB6gv)
+    - Option 2: Extract it yourself from an Android emulator. [how to](https://gist.github.com/Bbalduzz/f0ebe75f6c38e0daf0fba0160439e68a)
 
 3. Setup the L3 CDM:
    - Place the L3 CDM file, named as device_name, inside the devices folder in your working environment.
